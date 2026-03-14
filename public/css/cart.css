@@ -1,0 +1,249 @@
+
+body{
+    min-height: 100%;
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.02rem;
+    /* line-height: calc(1 + 0.8 / var(--font-body-scale)); */
+    /* font-family: var(--font-body-family); */
+    font-family: rocgrotesk-regular, sans-serif;
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight)
+}
+.container-card{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+/*  */
+
+h3{
+    font-family:rocgrotesk-regular, sans-serif;
+    font-size: medium;
+}
+.cart{
+    flex:2;
+}
+
+.product{
+    background:#fff;
+    padding:15px;
+    margin-bottom:15px;
+    display:flex;
+    gap:15px;
+    border-radius:5px;
+    align-items:center;
+    box-shadow: 0 10px 30px rgba(52, 51, 51, 0.07);
+}
+.product:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+}
+
+.product-details{
+    flex:1;
+}
+
+.price{
+    font-weight:bold;
+}
+.sizes{
+    font-weight: bold;
+}
+
+.old{
+    text-decoration:line-through;
+    color:gray;
+    font-weight:normal;
+    margin-right:6px;
+}
+
+.qty-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:180px;
+    border:1px solid #888;
+    padding:12px 20px;
+    background:#ffffff;
+}
+
+.qty-btn{
+    background:none;
+    border:none;
+    font-size:22px;
+    cursor:pointer;
+    color:#333;
+    width:30px;
+}
+
+.qty-btn:hover{
+    color:#000;
+    transform:scale(1.1);
+}
+
+.qty-number{
+    font-size:20px;
+    font-weight:500;
+}
+
+
+.actions{
+    margin-top:10px;
+    font-size:14px;
+    color:#000000;
+    cursor:pointer;
+}
+
+.summary{
+    flex:1;
+    background:#fff;
+    padding:20px;
+    border-radius:5px;
+    height:fit-content;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.summary h3{
+    margin-top:0;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin:10px 0;
+}
+
+.green{ color:rgb(0, 0, 0); }
+.total{
+    font-weight:bold;
+    border-top:1px dashed #ccc;
+    padding-top:10px;
+}
+
+.saved-section{
+    margin-top:30px;
+}
+
+.saved-title{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .container-card{
+        flex-direction:column;
+    }
+}
+.title-wrapper-with-link {
+    display: flex;
+    justify-content: space-around;
+    align-items:first baseline;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.title, .title-wrapper-with-link {
+    margin: auto;
+    padding: 35px;
+}
+/* h3{
+font-family: rocgrotesk-regular, sans-serif;
+font-weight:lighter;
+margin: 1px 0;
+color: #000;
+font-size: small;
+justify-content: space-evenly;
+} */
+.title-wrapper-with-link a ,h1 {
+    margin-top: 0;
+    flex-shrink: 0;
+    font-family: rocgrotesk-regular, sans-serif;
+}
+
+
+
+/*checkout buttion*/
+
+.view-cart-checkout {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background:black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-cart-continue  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* empty-card css*/
+
+.empty-cart {
+    text-align: center;
+    padding: 80px 20px;
+    display: none;   /* Hidden by default */
+}
+
+.empty-cart h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-family: rocgrotesk-regular, sans-serif;
+}
+
+.continue-btn {
+    background: #000;
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.continue-btn:hover {
+    background: #333;
+}
+
+.account-text {
+    font-size: 18px;
+}
+
+.account-text a {
+    text-decoration: underline;
+    color: black;
+}
+
+
+.empty-cart {
+    display: none;
+}
+/* a:link, a:visited {
+    color: #000000;
+} */
+
+a.fLink a, footer a {
+    color: gold;
+}
+/* a:link, a:visited {
+    color: #ffffff;
+} */
